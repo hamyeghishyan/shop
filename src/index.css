@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f2f2f7;
 }
 .btns_wrapper {
     height: 40px;
