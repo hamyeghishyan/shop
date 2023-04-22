@@ -1,24 +1,16 @@
-import { useState } from "react";
-import H from "./components/H";
-import M from "./components/M";
-import N from "./components/N";
-import Y from "./components/Y";
+import { useLocation, useNavigate } from "react-router-dom";
+import Header from "./components/Header";
+import RootRouter from "./router";
 
 function App() {
-    const [flag, setFlag] = useState("h");
-    const changeFlagValue = (flag) => setFlag(flag);
+    const navigator = useNavigate();
+    const location = useLocation();
+    console.log(location);
+
     return (
         <div className="App">
-            <div className="btns_wrapper">
-                <button onClick={() => changeFlagValue("h")}>HAMO</button>
-                <button onClick={() => changeFlagValue("y")}>YURA</button>
-                <button onClick={() => changeFlagValue("m")}>MILENA</button>
-                <button onClick={() => changeFlagValue("n")}>NUNE </button>
-            </div>
-            {flag === "h" && <H />}
-            {flag === "y" && <Y />}
-            {flag === "m" && <M />}
-            {flag === "n" && <N />}
+            <Header />
+            <RootRouter />
         </div>
     );
 }
