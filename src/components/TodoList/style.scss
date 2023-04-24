@@ -12,7 +12,7 @@
     }
     & .new_task_wrapper {
         width: 100%;
-        background-color: #d0d0d0;
+        background-color: #f2f2f7;
         border-radius: 8px;
         height: 112px;
         margin-top: 24px;
@@ -29,6 +29,30 @@
             display: grid;
             gap: 8px;
             grid-template-columns: 1fr 178px 88px;
+        }
+    }
+    & .date_wrapper {
+        width: 614px;
+        height: 224px;
+        border-radius: 8px;
+        background-color: #f2f2f7;
+        margin-top: 24px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        & .dates_title {
+            color: #2b2b2b;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: "OpenSans-600";
+            margin-bottom: 8px;
+        }
+        & .dates_paragraphs {
+            width: 582px;
+            height: 48px;
+            border-radius: 4px;
+            background-color: #fff;
         }
     }
 }
