@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url("./assets/fonts/fonts.scss");
+=======
+@import url("./assets/fonts/font.scss");
+>>>>>>> 3c44554e513e82840c0ac8ec3a51452c9ee31f8c
 
 * {
     margin: 0;
@@ -6,7 +10,12 @@
     box-sizing: border-box;
     font-family: "OpenSans-400";
 }
+<<<<<<< HEAD
 .App{
+=======
+
+.App {
+>>>>>>> 3c44554e513e82840c0ac8ec3a51452c9ee31f8c
     width: 100%;
     background-color: #e5e5e5;
     min-height: 100vh;
