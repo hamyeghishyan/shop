@@ -31,4 +31,47 @@
             gap: 8px;
         }
     }
+    .dates_div{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px;
+        width: 614px;
+        min-height: 224px;
+        margin-top: 16px;
+        background: #F2F2F7;
+        border-radius: 8px;
+        & .dates{
+            width: 47px;
+            height: 24px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #2B2B2B
+        }
+    }
+}
+.item_delete{
+    position: relative;
+}
+.item{
+    left: 29.79%;
+    right: 29.79%;
+    top: 52.67%;
+    bottom: 42%;
+    height: 40px;
+    background: #FFFFFF;
+    color: #3a85f7;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+}
+.delete_button{
+    font-family: "OpenSans-600";
+    color: #EB445A;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 50px;
+    position: absolute;
+    left: 85%;
 }
